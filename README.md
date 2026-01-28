@@ -11,9 +11,15 @@ O cálculo  do curtailment foi definido pela seguinte lógica:
 Cálculo do curtailment (créditos ao Bernard Küse - https://www.linkedin.com/in/bernardkusel/)
 
 SE val_geracaolimitada não é nulo ENTÃO
+
  SE val_geracaoreferencia > val_geracao ENTÃO
+ 
  val_geracaoreferencia - val_geracao
+ 
  SENÃO
+ 
  0 
+
 SENÃO
+
  0

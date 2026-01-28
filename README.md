@@ -5,3 +5,14 @@ Os dados de PLD estão disponíveis no formato .csv pelo seu fornecedor oficial 
 PLD 2025 - CCEE: https://pda-download.ccee.org.br/korJMXwpSLGyVlpRMQWduA/content
 CURTAILMENT EÓLICA: https://dados.ons.org.br/dataset/restricao_coff_eolica_detail
 CURTAILMENT SOLAR: https://dados.ons.org.br/dataset/restricao_coff_fotovoltaica_detail
+
+O cálculo  do curtailment foi definido pela seguinte lógica:
+
+# Cálculo do curtailment (créditos ao Bernard Küse - https://www.linkedin.com/in/bernardkusel/)
+SE val_geracaolimitada não é nulo ENTÃO
+ SE val_geracaoreferencia > val_geracao ENTÃO
+ val_geracaoreferencia - val_geracao
+ SENÃO
+ 0 
+SENÃO
+ 0

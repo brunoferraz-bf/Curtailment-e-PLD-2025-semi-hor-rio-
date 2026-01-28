@@ -1,4 +1,4 @@
-# Curtailment-e-PLD-2025-semi-hor-rio-
+# Curtailment-PLD-2025-semi-horário-
 Este repositório contém o tratamento de dados de curtailment e PLD (semi-horário), com foco na análise da proporção de curtailment ocorrendo com preços acima do piso regulatório.  O objetivo é apoiar análises de risco, portfólio e decisões econômicas no contexto do mercado de energia elétrica brasileiro.
 Os dados de PLD estão disponíveis no formato .csv pelo seu fornecedor oficial (CCEE) em apenas um arquivo (horário), e os dados de Curtailment estão disponíveis pelo seu fornecedor oficial (ONS) mês a mês e classificado por fonte (eólica e solar) no formato .parquet e no formato semi-horário, através dos links abaixo:
 
